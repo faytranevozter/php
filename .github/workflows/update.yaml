@@ -20,11 +20,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Define dockerfile
-        run: DOCKERFILE=$(echo "Dockerfile.${{ matrix.version }}") >> $GITHUB_ENV
+        run: echo "DOCKERFILE=$(echo 'Dockerfile.${{ matrix.version }}')" >> $GITHUB_ENV
       - if: matrix.version == 'latest'
-        run: DOCKERFILE="Dockerfile" >> $GITHUB_ENV
-      - name: See Dockerfile
-        run: "echo ${{ env.DOCKERFILE }}"
+        run: echo "DOCKERFILE='Dockerfile' >> $GITHUB_ENV
       - name: Checkout
         uses: actions/checkout@v4
       - name: Login to GitHub Container Registry
