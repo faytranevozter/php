@@ -21,7 +21,7 @@ jobs:
     steps:
       - name: Define dockerfile
         run: DOCKERFILE=$(echo "Dockerfile.${{ matrix.version }}") >> $GITHUB_ENV
-      - if: matrix.version != 'latest'
+      - if: matrix.version == 'latest'
         run: DOCKERFILE="Dockerfile" >> $GITHUB_ENV
       - name: Checkout
         uses: actions/checkout@v4
