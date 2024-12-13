@@ -37,7 +37,7 @@ jobs:
         with:
           context: .
           push: true
-          file: "${{ env.DOCKERFILE }}"
+          file: "./${{ env.DOCKERFILE }}"
           tags: "${{ env.IMAGE_NAME }}:${{ matrix.version }}"
           cache-from: type=gha
           cache-to: type=gha,mode=max
