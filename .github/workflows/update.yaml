@@ -14,9 +14,6 @@ jobs:
       matrix:
         os: [ubuntu-latest]
         version: ['7.4-fpm', '8.0-fpm', '8.1-fpm', '8.2-fpm', '8.3-fpm', '8.4-fpm', 'latest']
-        include:
-          - version: 'latest'
-            dockerfile: 'Dockerfile'
     runs-on: ubuntu-latest
     steps:
       - name: Define dockerfile
