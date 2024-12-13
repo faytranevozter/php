@@ -1,7 +1,7 @@
 name: Update Image
 on:
   schedule:
-    - cron: "1 0 * * *"
+    - cron: "0 1 * * 1" # Every Monday at 1:00 AM
   workflow_dispatch:
 env:
   IMAGE_NAME: "ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}"
