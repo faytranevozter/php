@@ -14,7 +14,7 @@ jobs:
       matrix:
         os: [ubuntu-24.04]
         version: ['7.4-cli', '8.0-cli', '8.1-cli', '8.2-cli', '8.3-cli', '8.4-cli']
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
     steps:
       - name: Define dockerfile
         run: echo "DOCKERFILE=Dockerfile.${{ matrix.version }}" >> $GITHUB_ENV
