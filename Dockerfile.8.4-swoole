@@ -1,0 +1,9 @@
+FROM ghcr.io/faytranevozter/php:8.4-cli
+
+# Install the pcntl and swoole extensions
+RUN apk add --no-cache autoconf g++ make linux-headers \
+    && docker-php-ext-configure pcntl --enable-pcntl \
+    && docker-php-ext-install pcntl \
+    && pecl install swoole \
+    && docker-php-ext-enable swoole \
+    && apk del autoconf g++ make linux-headers
