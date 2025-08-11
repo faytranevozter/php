@@ -1,4 +1,4 @@
-name: Update Image FPM
+name: Update Custom Image FPM
 on:
   workflow_dispatch:
 env:
