@@ -1,12 +1,15 @@
 # PHP Docker
 
 ## Supported PHP versions:
-- 8.4 (fpm, cli) - latest (fpm)
-- 8.3 (fpm, cli)
-- 8.2 (fpm, cli)
-- 8.1 (fpm, cli)
-- 8.0 (fpm, cli)
-- 7.4 (fpm, cli)
+- 8.4 ([fpm](https://github.com/faytranevozter/php/pkgs/container/php?tag=8.4-fpm), [cli](https://github.com/faytranevozter/php/pkgs/container/php?tag=8.4-fpm)) - latest ([fpm](https://github.com/faytranevozter/php/pkgs/container/php?tag=latest))
+- 8.3 ([fpm](https://github.com/faytranevozter/php/pkgs/container/php?tag=8.3-fpm), [cli](https://github.com/faytranevozter/php/pkgs/container/php?tag=8.3-cli))
+- 8.2 ([fpm](https://github.com/faytranevozter/php/pkgs/container/php?tag=8.2-fpm), [cli](https://github.com/faytranevozter/php/pkgs/container/php?tag=8.2-cli))
+- 8.1 ([fpm](https://github.com/faytranevozter/php/pkgs/container/php?tag=8.1-fpm), [cli](https://github.com/faytranevozter/php/pkgs/container/php?tag=8.1-cli))
+- 8.0 ([fpm](https://github.com/faytranevozter/php/pkgs/container/php?tag=8.0-fpm), [cli](https://github.com/faytranevozter/php/pkgs/container/php?tag=8.0-cli))
+- 7.4 ([fpm](https://github.com/faytranevozter/php/pkgs/container/php?tag=7.4-fpm), [cli](https://github.com/faytranevozter/php/pkgs/container/php?tag=7.4-cli))
+
+## Custom Images:
+- 8.3 ([fpm](https://github.com/faytranevozter/php/pkgs/container/php?tag=8.3-fpm-mongo), [cli](https://github.com/faytranevozter/php/pkgs/container/php?tag=8.3-cli-mongo)) - MongoDB
 
 ## Default extensions:
 This extensions below are enabled by default (`php -m`)
